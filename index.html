@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FELS BURGER KASA</title>
+  <!-- CSS Bağlantısı -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>FELS BURGER KASA</h1>
+
+    <!-- Masalar Listesi -->
+    <div id="masalar" class="masalar">
+      <div class="masa" data-masa="1">
+          <h3>Masa 1</h3>
+          <button onclick="showMenu(1)">Menüyü Gör</button>
+          <div class="siparisler" id="siparisler-1"></div>
+          <button id="odeme-button-1" onclick="completeOrder(1)" class="odeme-button" style="display:none;">Sipariş Ödendi</button>
+      </div>
+      <div class="masa" data-masa="2">
+          <h3>Masa 2</h3>
+          <button onclick="showMenu(2)">Menüyü Gör</button>
+          <div class="siparisler" id="siparisler-2"></div>
+          <button id="odeme-button-2" onclick="completeOrder(2)" class="odeme-button" style="display:none;">Sipariş Ödendi</button>
+      </div>
+      <div class="masa" data-masa="3">
+        <h3>Masa 3</h3>
+        <button onclick="showMenu(3)">Menüyü Gör</button>
+        <div class="siparisler" id="siparisler-3"></div>
+        <button id="odeme-button-3" onclick="completeOrder(3)" class="odeme-button" style="display:none;">Sipariş Ödendi</button>
+      </div>
+        <div class="masa" data-masa="4">
+        <h3>Masa 4</h3>
+        <button onclick="showMenu(4)">Menüyü Gör</button>
+        <div class="siparisler" id="siparisler-4"></div>
+        <button id="odeme-button-4" onclick="completeOrder(4)" class="odeme-button" style="display:none;">Sipariş Ödendi</button>
+      </div>
+      <div class="masa" data-masa="5">
+        <h3>Masa 5</h3>
+        <button onclick="showMenu(5)">Menüyü Gör</button>
+        <div class="siparisler" id="siparisler-5"></div>
+        <button id="odeme-button-5" onclick="completeOrder(5)" class="odeme-button" style="display:none;">Sipariş Ödendi</button>
+      </div>
+      <div class="masa" data-masa="6">
+        <h3>Masa 6</h3>
+        <button onclick="showMenu(6)">Menüyü Gör</button>
+        <div class="siparisler" id="siparisler-6"></div>
+        <button id="odeme-button-6" onclick="completeOrder(6)" class="odeme-button" style="display:none;">Sipariş Ödendi</button>
+      </div>
+      <div class="masa" data-masa="7">
+        <h3>Masa 7</h3>
+        <button onclick="showMenu(7)">Menüyü Gör</button>
+        <div class="siparisler" id="siparisler-7"></div>
+        <button id="odeme-button-7" onclick="completeOrder(7)" class="odeme-button" style="display:none;">Sipariş Ödendi</button>
+      </div>
+      <div class="masa" data-masa="8">
+        <h3>Masa 8</h3>
+        <button onclick="showMenu(8)">Menüyü Gör</button>
+        <div class="siparisler" id="siparisler-8"></div>
+        <button id="odeme-button-8" onclick="completeOrder(8)" class="odeme-button" style="display:none;">Sipariş Ödendi</button>
+      </div>
+    </div>
+
+    <!-- Menü -->
+    <div id="menu" class="menu" style="display:none;">
+      <h2>Menü</h2>
+      <div class="menu-item">
+        <span>Burger - 50 TL</span>
+        <button onclick="addOrder('Burger', 50)">+</button>
+        <button id="remove-burger" onclick="removeOrder('Burger', 50)" style="display:none;">-</button>
+      </div>
+      <div class="menu-item">
+        <span>Patates - 15 TL</span>
+        <button onclick="addOrder('Patates', 15)">+</button>
+        <button id="remove-patates" onclick="removeOrder('Patates', 15)" style="display:none;">-</button>
+      </div>
+      <div class="menu-item">
+        <span>Kola - 10 TL</span>
+        <button onclick="addOrder('Kola', 10)">+</button>
+        <button id="remove-kola" onclick="removeOrder('Kola', 10)" style="display:none;">-</button>
+      </div>
+      <button onclick="closeMenu()">Menüyü Kapat</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Bağlantısı -->
+  <script src="app.js"></script>
+</body>
+</html>
